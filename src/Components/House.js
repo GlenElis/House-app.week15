@@ -1,6 +1,6 @@
 import React from "react";
 import { NewRoomForm } from './NewRoomForm';
-import { Button } from "react-bootstrap";
+
 
 export const House = (props) => {
     const {house, updateHouse} = props;
@@ -12,7 +12,6 @@ export const House = (props) => {
         };
         updateHouse(updatedHouse)
     }
-
     const addNewRoom = (room) =>  updateHouse({...house, rooms: [...house.rooms, room]});
     
     const rooms = () => (
